@@ -90,7 +90,7 @@ The model's structure enables precise component description, rich query construc
 
 ### 🔁 Functional Entity Interaction – Sequence Diagram
 
-![Sequence Diagram](./Images/Sequence Diagram of INC components discovery.png)
+![Sequence Diagram](./Images/SequenceDiagramofINCcomponentsDiscovery.png)
 
 This diagram depicts the full sequence of interactions among functional entities during the discovery of suitable INC components for a **holographic streaming** request.
 
