@@ -74,9 +74,25 @@ The model's structure enables precise component description, rich query construc
 
 ## ⚙️ Discovery of INC Components (Data Retrieval)
 
+## 🧠 User Request & Query Generation
+
+Users define preferences across three levels:
+- **Mandatory**: Must be fulfilled; non-negotiable.
+- **High**: Strongly preferred; used for ranking.
+- **Optional**: Desirable but low-priority.
+
+Each request is translated into:
+- A **SQWRL query** filtering components based on mandatory conditions
+- A **preference list** for ranking based on high and optional preferences
+
+The user request is formally structured as follows:
+
+- UR_i = \\{(Pr_{i,j}, Req\\_f_{i,j}, Req_{i,j}, Condition_{i,j}, Val_{i,j})\\}_{j=1..n}
+![Matchmaking Algorithm](./Images/SemanticMatchmaking.png)
+
 ### 🔍 INC Component Semantic Matchmaking – Algorithm
 
-![Matchmaking Algorithm](./Images/SemanticMatchmaking.png)
+![Symbols and Their Descriptions for User Request Representation](./Images/SymbolUserRequest.png)
 
 **Algorithm 1** outlines the semantic matchmaking process to retrieve and rank INC components from the centralized repository based on user requests and preferences. It proceeds as follows:
 
