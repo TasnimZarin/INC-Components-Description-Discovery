@@ -59,7 +59,7 @@ The INCO ontology structures knowledge using a hierarchical class model:
 
 ---
 
-### 🧬 INCO Model Representation
+### 🧬 INCO Decription Model Representation
 
 ![INCO Model Representation](./Images/INCOModelRepresentation.jpg)
 
@@ -71,6 +71,39 @@ This entity-relationship-style annotation illustrates:
 The model's structure enables precise component description, rich query construction, and efficient semantic retrieval aligned with next-gen application demands.
 
 ---
+
+## ⚙️ Discovery of INC Components (Data Retrieval)
+
+### 🔍 INC Component Semantic Matchmaking – Algorithm
+
+![Matchmaking Algorithm](./Images/SemanticMatchmaking.png)
+
+**Algorithm 1** outlines the semantic matchmaking process to retrieve and rank INC components from the centralized repository based on user requests and preferences. It proceeds as follows:
+
+- The algorithm ensures that both the query request (`QRi`) and user preference list (`pref listi`) are not null (Line 2).
+- The **MatchAll** function is applied to each INC component to check for exact matches to mandatory preferences (Lines 4–6).
+- If no components meet all mandatory preferences, the result list remains empty.
+- The **MatchSomePutPriorityValue** function then scores the retrieved components based on high/optional preferences (Lines 10–12).
+- The **RankByPriorityValue** function orders components by their priority values (Line 13), surfacing the most relevant first.
+
+---
+
+### 🔁 Functional Entity Interaction – Sequence Diagram
+
+![Sequence Diagram](./Images/Sequence Diagram of INC components discovery.png)
+
+This diagram depicts the full sequence of interactions among functional entities during the discovery of suitable INC components for a **holographic streaming** request.
+
+1. **INC Providers** design and publish components in the Centralized Repository.
+2. The components are submitted to the **INCO Module** for parsing and semantic enrichment.
+3. A **User/Network Operator** submits a streaming request to the **Orchestrator**.
+4. The orchestrator sends a component discovery request to the **Query Processing Agent**, which transforms it into a SQWRL query and preference list.
+5. The **Semantic Matchmaking Module** receives and executes the query over the ontology.
+6. Matching results are ranked and returned to the orchestrator as URIs of relevant INC components.
+7. The orchestrator instantiates and places the components, initiates the data flow, and ensures QoS during the session.
+
+This process ensures end-to-end semantic matchmaking and QoS-driven orchestration for next-gen, latency-sensitive applications.
+
 
 ## 🛠️ Tools & Technologies
 
