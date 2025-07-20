@@ -29,6 +29,49 @@ Ontology provides a formal, machine-readable structure to define and relate doma
 
 ---
 
+## 🖼️ Visual Representations
+
+### 🧩 General Architecture Overview
+
+![Overall Architecture](./Images/OverallArchitecture.png)
+
+The architecture comprises several key modules, each fulfilling a distinct role in the INC component discovery pipeline:
+
+- **Centralized Repository**: A database of semantically described INC components.
+- **Semantic Matchmaking Module**: Performs ontology-based matching to identify relevant components.
+- **Query Processing Agent**: Translates user/operator requirements into actionable semantic queries.
+- **User/Network Operator Interface**: Allows specification of preferences and requirements.
+
+This architecture addresses the needs of latency-sensitive, next-generation applications (e.g., holographic communication) through semantic-driven INC component selection.
+
+---
+
+### 🧠 INCO’s Core Concepts
+
+![INCO Concepts](./Images/INCO_Concepts.jpg)
+
+The INCO ontology structures knowledge using a hierarchical class model:
+
+- **Subclasses** inherit properties from their superclasses.
+- **Semantic properties** define relationships between concepts.
+- **OWL Reasoning** enhances classification and retrieval logic.
+- All individuals are ultimately rooted in the universal superclass `owl:Thing`.
+
+---
+
+### 🧬 INCO Model Representation
+
+![INCO Model Representation](./Images/INCOModelRepresentation.jpg)
+
+This entity-relationship-style annotation illustrates:
+
+- **Functional Properties** (blue): Define capabilities of INC components, including ten core functional concepts.
+- **Non-Functional Properties** (purple): Represent operational requirements that influence deployment or compatibility.
+
+The model's structure enables precise component description, rich query construction, and efficient semantic retrieval aligned with next-gen application demands.
+
+---
+
 ## 🛠️ Tools & Technologies
 
 | Tool             | Purpose                                       |
