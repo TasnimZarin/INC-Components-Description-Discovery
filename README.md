@@ -33,7 +33,11 @@ Ontology provides a formal, machine-readable structure to define and relate doma
 
 ### 🧩 General Architecture Overview
 
-![Overall Architecture](./Images/OverallArchitecture.png)
+<div align="center">
+  <img src="your-image-file.png./Images/OverallArchitecture.png
+</div>
+
+<!-- ![Overall Architecture](./Images/OverallArchitecture.png) -->
 
 The architecture comprises several key modules, each fulfilling a distinct role in the INC component discovery pipeline:
 
