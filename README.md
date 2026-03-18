@@ -32,7 +32,7 @@ Ontology provides a formal, machine-readable structure to define and relate doma
 ## 🖼️ Visual Representations
 
 ### 🧩 General Architecture Overview
-![Overall Architecture](./Images/OverallArchitecture.png)
+<!--![Overall Architecture](./Images/OverallArchitecture.png)-->
 
 The architecture comprises several key modules, each fulfilling a distinct role in the INC component discovery pipeline:
 
@@ -87,7 +87,7 @@ Each request is translated into:
 The user request is formally structured as follows:
 
 - UR_i = \\{(Pr_{i,j}, Req\\_f_{i,j}, Req_{i,j}, Condition_{i,j}, Val_{i,j})\\}_{j=1..n}
-![Matchmaking Algorithm](./Images/SemanticMatchmaking.png)
+<!-- ![Matchmaking Algorithm](./Images/SemanticMatchmaking.png) -->
 
 ### 🔍 INC Component Semantic Matchmaking – Algorithm
 
@@ -105,7 +105,7 @@ The user request is formally structured as follows:
 
 ### 🔁 Functional Entity Interaction – Sequence Diagram
 
-![Sequence Diagram](./Images/SequenceDiagramofINCcomponentsDiscovery.png)
+<!-- ![Sequence Diagram](./Images/SequenceDiagramofINCcomponentsDiscovery.png) -->
 
 This diagram depicts the full sequence of interactions among functional entities during the discovery of suitable INC components for a **holographic streaming** request.
 
